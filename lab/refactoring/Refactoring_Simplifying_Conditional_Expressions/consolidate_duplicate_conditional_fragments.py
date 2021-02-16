@@ -20,5 +20,7 @@ def make_drink(drink, addons):
         mix = add(mix, addons)
     return mix
 
-final_drink = make_drink('strawberry milkshake', ['milk','sugar'])
-print(final_drink)
+
+if __name__ == "__main__":
+    final_drink = make_drink('strawberry milkshake', ['milk','sugar'])
+    print(final_drink)

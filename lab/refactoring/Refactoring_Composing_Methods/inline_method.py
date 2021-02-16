@@ -19,7 +19,7 @@ def older_than_18_year_old(age):
     else: 
         return False
     
-    
-person = Person(17.9)
-enter_night_club(person)
-        
+
+if __name__ == "__main__":
+    person = Person(17.9)
+    enter_night_club(person)

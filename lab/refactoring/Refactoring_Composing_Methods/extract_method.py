@@ -25,4 +25,6 @@ def print_stat():
     print('The population standard deviation of grades is: ', round(sd, 3))
     print('****** END ******')
 
-print_stat()
+
+if __name__ == "__main__":
+    print_stat()

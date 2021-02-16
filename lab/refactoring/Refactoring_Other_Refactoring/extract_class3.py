@@ -24,12 +24,13 @@ def get_cooking_progress(time, temperature, pressure):
     return time * temperature * pressure * COOKED_CONSTANT
 
 
-time = 30 # [min]
-temp = 103 # [celcius]
-pressure = 20 # [psi]
-desired_state = 'well-done'
+if __name__ == "__main__":
+    time = 30 # [min]
+    temp = 103 # [celcius]
+    pressure = 20 # [psi]
+    desired_state = 'well-done'
 
-if is_cookeding_criteria_satisfied(time, temp, pressure, desired_state):
-    print('cooking is done.')
-else:
-    print('ongoing cooking.')
+    if is_cookeding_criteria_satisfied(time, temp, pressure, desired_state):
+        print('cooking is done.')
+    else:
+        print('ongoing cooking.')

@@ -70,20 +70,22 @@ class FuelTank:
 class Cabin:
     def __init__(self):
         pass    
-    
 
-engine = Engine()
-# TODO: Rewrite the following after moving tpms to the 'Wheel' class.
-wheels = [Wheel(None, 'front-right'), Wheel(None, 'front-left'), 
-          Wheel(None, 'back-right'), Wheel(None, 'back-left')]
 
-cabin  = Cabin()
 
-tpms_di = {'front-right': Tpms(983408543), 'front-left':Tpms(4343083),
-               'back-right':Tpms(23654835), 'back_left':Tpms(3498857)}
+if __name__ == "__main__":
+    engine = Engine()
+    # TODO: Rewrite the following after moving tpms to the 'Wheel' class.
+    wheels = [Wheel(None, 'front-right'), Wheel(None, 'front-left'), 
+            Wheel(None, 'back-right'), Wheel(None, 'back-left')]
 
-fuel_tank = FuelTank()
+    cabin  = Cabin()
 
-my_car = Car(engine, wheels, cabin, tpms_di, fuel_tank)
+    tpms_di = {'front-right': Tpms(983408543), 'front-left':Tpms(4343083),
+                'back-right':Tpms(23654835), 'back_left':Tpms(3498857)}
+
+    fuel_tank = FuelTank()
+
+    my_car = Car(engine, wheels, cabin, tpms_di, fuel_tank)
 
 

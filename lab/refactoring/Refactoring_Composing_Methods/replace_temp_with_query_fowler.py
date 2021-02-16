@@ -10,3 +10,6 @@ def get_price():
         discount_factor = 0.98
     return base_price * discount_factor
 
+
+if __name__ == "__main__":
+    print(get_price())

@@ -9,12 +9,14 @@ emails = ['deb@makeschool.com', 'jim@makeschool.com']
 
 def send_hiring_email(email):
     print("email sent to: ", email)
-    
-for i, value in enumerate(emails):
-    if birth_year[i] > 1985:
-        print(first_names[i], last_names[i])
-        print('Movies Played: ', end='')
-        for m in movies[i]:
-            print(m, end=', ')
-        print()
-        send_hiring_email(value)
+
+
+if __name__ == "__main__":
+    for i, value in enumerate(emails):
+        if birth_year[i] > 1985:
+            print(first_names[i], last_names[i])
+            print('Movies Played: ', end='')
+            for m in movies[i]:
+                print(m, end=', ')
+            print()
+            send_hiring_email(value)
