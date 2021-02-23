@@ -4,7 +4,9 @@
 
 Enter the following command in your terminal:
 
-> $ pip install pytest
+> $ pip3 install pytest
+
+
 
 Note: If you get an the following warning:
 
@@ -471,7 +473,6 @@ def test_get_average_empty_list():
 ```
 ## Reference and further studies
 
-1. .[Pytest Installation and Getting Started
-](https://docs.pytest.org/en/stable/getting-started.html#getstarted)
+1. [Pytest Installation and Getting Started](https://docs.pytest.org/en/stable/getting-started.html#getstarted)
 1. 'Python Testing with pytest' book by Brian Okken.
 1. [semaphoreci](https://semaphoreci.com/community/tutorials/testing-python-applications-with-pytest)
